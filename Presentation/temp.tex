@@ -19,7 +19,7 @@
 \begin{frame}
     \frametitle {What is Go?}
     \begin{center}
-    \textcolor{deepblue}{Go is a \textcolor{red}{compiled}, \textcolor{green}{concurrent}, \textcolor{yellow}{garbage-collected}, \textcolor{blue}{statically typed} language developed at}
+    \textcolor{deepblue}{Go is a \textcolor{red}{compiled}, \textcolor{green}{concurrent}, \textcolor{yellow}{garbage-collector}, \textcolor{blue}{statically typed} language developed at}
     \linebreak
     \includegraphics[width=0.3\linewidth]{img/google.png}
     \end{center}
@@ -229,6 +229,33 @@
 
 {
 \begin{frame}
+    \frametitle{Structs}
+    \begin{itemize}
+        \item A struct is a collection of fields
+        \item Struct fields are accessed using a dot
+        \item Struct fields can be accessed through a struct pointer
+        \item You can list just a subset of fields by using the Name: syntax
+        \item The special prefix \& returns a pointer to the struct value
+    \end{itemize}
+\end{frame}
+}
+
+{
+\begin{frame}
+    \frametitle{Structs}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+        \includegraphics[width=0.9\linewidth]{img/struct.PNG}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+        \includegraphics[width=\linewidth]{img/structoutput.PNG}
+        \end{column}
+    \end{columns}
+\end{frame}
+}
+
+{
+\begin{frame}
     \frametitle{Arrays}
     \begin{itemize}
         \item The type [n]T is an array of n values of type T
@@ -283,6 +310,31 @@
         \end{column}
         \begin{column}{0.4\textwidth}
         \includegraphics[width=\linewidth]{img/slicelencapoutput.PNG}
+        \end{column}
+    \end{columns}
+\end{frame}
+}
+
+{
+\begin{frame}
+    \frametitle{Range}
+    \begin{itemize}
+        \item The range form of the for loop iterates over a slice or map
+        \item two values are returned for each iteration, the index and the element at that index
+        \item If you only want the index, you can omit the second variable
+    \end{itemize}
+\end{frame}
+}
+
+{
+\begin{frame}
+    \frametitle{Range}
+    \begin{columns}
+        \begin{column}{0.7\textwidth}
+        \includegraphics[width=\linewidth]{img/range.PNG}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+        \includegraphics[width=0.7\linewidth]{img/rangeoutput.PNG}
         \end{column}
     \end{columns}
 \end{frame}
