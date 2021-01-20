@@ -216,6 +216,80 @@
 
 {
 \begin{frame}
+    \frametitle{Pointers}
+    \begin{itemize}
+        \item Synatx for pointers is the same as in C or C++
+        \item But unlike C, Go has no pointer arithmetic.
+    \end{itemize}
+    \begin{center}
+        \includegraphics[width=0.6\linewidth]{img/pointers.PNG}
+    \end{center}
+\end{frame}
+}
+
+{
+\begin{frame}
+    \frametitle{Arrays}
+    \begin{itemize}
+        \item The type [n]T is an array of n values of type T
+        \item An array's length is part of its type, so arrays cannot be resized
+    \end{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \includegraphics[width=\linewidth]{img/array.PNG}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \includegraphics[width=0.5\linewidth]{img/arrayoutput.PNG}
+        \end{column}
+    \end{columns}
+\end{frame}
+}
+
+{
+\begin{frame}
+    \frametitle{Slicing}
+    \begin{itemize}
+        \item Slicing of arrays is done the same way as in Python
+        \item Slices are like references to arrays
+    \end{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \includegraphics[width=0.7\linewidth]{img/slices.PNG}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \includegraphics[width=0.7\linewidth]{img/slicesoutput.PNG}
+        \end{column}
+    \end{columns}
+\end{frame}
+}
+
+{
+\begin{frame}
+    \frametitle{Slice Literals Length and Capacity}
+    \begin{itemize}
+        \item A slice literal is like an array literal without the length
+        \item The length and capacity of a slice s can be obtained using the expressions len(s) and cap(s)
+        \item There are also many more built-in functions like make and append that can be used with slices
+    \end{itemize}
+\end{frame}
+}
+
+{
+\begin{frame}
+    \frametitle{Slice Literals Length and Capacity}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+        \includegraphics[width=\linewidth]{img/slicelencap.PNG}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+        \includegraphics[width=\linewidth]{img/slicelencapoutput.PNG}
+        \end{column}
+    \end{columns}
+\end{frame}
+}
+
+{
+\begin{frame}
         \includegraphics[width=\textwidth]{img/questions.PNG}
 \end{frame}
 }
